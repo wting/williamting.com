@@ -137,8 +137,8 @@ No styleguide reference.
 */
 @font-face {
   font-family: 'junctionregularRegular';
-  src: url('/assets/themes/the-minimum/font/Junction-webfont.eot');
-  src: url('/assets/themes/the-minimum/font/Junction-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/themes/the-minimum/font/Junction-webfont.woff') format('woff'), url('/assets/themes/the-minimum/font/Junction-webfont.ttf') format('truetype'), url('/assets/themes/the-minimum/font/Junction-webfont.svg#junctionregularRegular') format('svg');
+  src: url('/assets/themes/min-ting/font/Junction-webfont.eot');
+  src: url('/assets/themes/min-ting/font/Junction-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/themes/min-ting/font/Junction-webfont.woff') format('woff'), url('/assets/themes/min-ting/font/Junction-webfont.ttf') format('truetype'), url('/assets/themes/min-ting/font/Junction-webfont.svg#junctionregularRegular') format('svg');
   font-weight: normal !important;
   font-style: normal;
 }
@@ -229,7 +229,7 @@ pre {
 /* MAIN
 --------------------------------------------------------------------------------- */
 .unit-article header {
-  background: url('/assets/themes/the-minimum/skin/100-90-5-monochrome.png');
+  background: url('/assets/themes/min-ting/skin/100-90-5-monochrome.png');
   background-repeat: repeat;
   background-position: 0 0;
   background-color: #BADA55;
@@ -402,7 +402,7 @@ pre {
   text-transform: capitalize;
 }
 .unit-article .unit-foot {
-  background: url('/assets/themes/the-minimum/skin/100-90-5-monochrome.png') repeat 0 0 #4d4d4d;
+  background: url('/assets/themes/min-ting/skin/100-90-5-monochrome.png') repeat 0 0 #4d4d4d;
   color: #fafafa;
   padding-top: 1.625em;
   padding-bottom: 1.625em;
@@ -428,7 +428,7 @@ pre {
 }
 /* post & page */
 .layout-page .tag_box {
-  background: url('/assets/themes/the-minimum/skin/100-90-5-monochrome.png') repeat 0 0 #999999;
+  background: url('/assets/themes/min-ting/skin/100-90-5-monochrome.png') repeat 0 0 #999999;
   padding: 0.8125em;
   list-style: none;
   -webkit-border-radius: 3px;
@@ -753,7 +753,7 @@ pre {
   }
 }
 /*
-	Not that old computer layout 
+	Not that old computer layout
 */
 @media only screen and (min-width: 1280px) {
   .the-header .unit-inner {
@@ -799,7 +799,7 @@ pre {
   }
 }
 /*
-	Huge-screen layout 
+	Huge-screen layout
 */
 @media only screen and (min-width: 1410px) {
   .the-header .unit-inner {
