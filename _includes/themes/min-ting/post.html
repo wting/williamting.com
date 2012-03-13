@@ -5,6 +5,14 @@
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
 						<h1 class="h2 entry-title">{{ page.title }}</h1>
+						<h5 class="date-publish" style="float: right; margin-top: 0; position: relative; top: -29px; color: #fff;">
+							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
+								<span class="month"><abbr>{{ page.date | date: '%B' }}</abbr></span>
+								<span class="day">{{ page.date | date: '%d' }}</span>
+								<span class="year">{{ page.date | date: '%Y' }}</span>
+							</date>
+						</h5>
+						<div style="clear: both;"></div>
 					</div><!-- unit-inner -->
 				</div><!-- unit-head -->
 			</header>
@@ -14,11 +22,11 @@
 					{{ content }}
 					<div class="meta">
 						<p class="date-publish">
-							Published: 
+							Published:
 							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
-							<span class="month"><abbr>{{ page.date | date: '%B' }}</abbr></span>
-							<span class="day">{{ page.date | date: '%d' }}</span>
-							<span class="year">{{ page.date | date: '%Y' }}</span>
+								<span class="month"><abbr>{{ page.date | date: '%B' }}</abbr></span>
+								<span class="day">{{ page.date | date: '%d' }}</span>
+								<span class="year">{{ page.date | date: '%Y' }}</span>
 							</date>
 						</p>
 						<ul class="list-category list-linear">
@@ -35,15 +43,14 @@
 				</div><!-- entry-content -->
 				<div class="misc-content">
 					<div class="social">
-						<ul class="list-linear">
-							<li><div class="twitter-tweet"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="{{ site.author.twitter }}" data-lang="en">Tweet</a></div></li>
-							<li><div class="twitter-follow"><a href="https://twitter.com/{{ site.author.twitter }}" class="twitter-follow-button" data-show-count="false" data-lang="en"></a></div></li>
-						</ul>
+						<div style="float: left;"><a href="https://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="{{ site.author.twitter }}" data-lang="en">Tweet</a></div>
+						<div style="float: right;"><a href="#page">&uarr; Back to Top</a></div>
+						<div style="clear: both;"></div>
 					</div>
-					
+
 					{% include JB/comments %}
 				</div><!-- misc-content -->
-				
+
 			</div><!-- bd -->
 			<footer class="unit-foot">
 				<div class="unit-inner unit-foot-inner">
@@ -61,7 +68,7 @@
 						</ul>
 					</nav>
 					<p class="gotop">
-						<a href="#page">Back to Top</a>
+						<a href="#page">&uarr; Back to Top</a>
 					</p>
 				</div>
 			</footer>

@@ -45,6 +45,25 @@ Vertical Rhythm is caluculated via http://j.mp/sUvKuN
 
 No styleguide reference.
 */
+
+/*
+ * Color scheme: http://kuler.adobe.com/#themeID/1764754
+ *
+ * ff6138
+ * ffff9d
+ * beeb9f
+ * 79bd8f
+ * 00a388
+ *
+ * Color scheme: http://kuler.adobe.com/#themeID/1785951
+ *
+ * e83a25
+ * ffe9a3
+ * 98cc96
+ * 004563
+ * 191b28
+ *
+*/
 h1,
 h2,
 h3,
@@ -232,13 +251,14 @@ pre {
   background: url('/assets/themes/min-ting/skin/100-90-5-monochrome.png');
   background-repeat: repeat;
   background-position: 0 0;
-  background-color: #BADA55;
+  background-color: #004563;
+  height: 50px;
   margin-bottom: 1.625em;
   padding-top: 1.625em;
   padding-bottom: 1.625em;
 }
 .unit-article header h1 {
-  color: #2d2d2d;
+  color: #fff;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -402,7 +422,7 @@ pre {
   text-transform: capitalize;
 }
 .unit-article .unit-foot {
-  background: url('/assets/themes/min-ting/skin/100-90-5-monochrome.png') repeat 0 0 #4d4d4d;
+  background: url('/assets/themes/min-ting/skin/100-90-5-monochrome.png') repeat 0 0 #004563;
   color: #fafafa;
   padding-top: 1.625em;
   padding-bottom: 1.625em;
@@ -506,8 +526,7 @@ pre {
 /* FOOTER
 ----------------------------------------------- */
 .the-footer {
-  background-color: #1a1a1a;
-  background-color: rgba(21, 25, 25, 0.8);
+  background: url('/assets/themes/min-ting/skin/100-90-5-monochrome.png') repeat 0 0 #003452;
   color: #fafafa;
   color: rgba(250, 250, 250, 0.8);
   padding-bottom: 1.625em;
