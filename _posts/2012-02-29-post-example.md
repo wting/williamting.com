@@ -60,20 +60,25 @@ scelerisque lorem.
       myfloats.setmember (3,3.1416);
       cout << myints.getmember(0) << '\n';
       cout << myfloats.getmember(3) << '\n';
+      cout << "Example Post" << endl;
       return 0;
     }
+
 {% endhighlight %}
 
 ### C++ (example 2)
 
-{% highlight c++ %}
-    //#define mem_fun1 mem_fun
+{% highlight cpp %}
+
+    /*
+     * Multi-line comment block
+     */
+
     #include <iostream>
     #include <vector>
     #include <string>
     #include <algorithm>
     #include <functional>
-
 
     class Person {
       private:
@@ -123,7 +128,6 @@ scelerisque lorem.
                   bind2nd(mem_fun(&Person::printWithPrefix),
                           "person: "));
     }
-
 
     int main()
     {
