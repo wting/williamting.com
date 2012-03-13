@@ -790,16 +790,16 @@ pre {
 */
 @media only screen and (min-width: 1280px) {
 	.the-header .unit-inner {
-		width: 43.125em;
+		width: 60em;
 	}
 	.the-header .logo {
-		width: 21.5625em;
+		width: 26.25em;
 		float: left;
 	}
 	.the-header .nav-global {
 		margin-top: 21px;
 		text-align: right;
-		width: 21.5625em;
+		width: 26.25em;
 		float: right;
 	}
 	.unit-article .unit-head-inner,
