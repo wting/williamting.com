@@ -2,6 +2,7 @@
 
 @import "module.css";
 
+/*@import "pygments.css";*/
 @import "syntaxhighlighter.css";
 
 @import "helper.css";
@@ -257,6 +258,9 @@ pre {
 }
 /* MAIN
 --------------------------------------------------------------------------------- */
+.bd {
+	min-height: 400px;
+}
 .unit-article header {
 	background: url('/assets/themes/min-ting/skin/100-90-5-monochrome.png');
 	background-repeat: repeat;
@@ -426,10 +430,10 @@ pre {
 }
 .unit-article .list-category {
 	margin-bottom: 0;
-	text-transform: capitalize;
+	text-transform: lowercase;
 }
 .unit-article .list-tag {
-	text-transform: capitalize;
+	text-transform: lowercase;
 }
 .unit-article .unit-foot {
 	background: url('/assets/themes/min-ting/skin/100-90-5-monochrome.png') repeat 0 0 #004563;
