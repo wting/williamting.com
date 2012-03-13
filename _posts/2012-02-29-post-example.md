@@ -28,6 +28,114 @@ scelerisque lorem.
 
 ## Code
 
+### C++ (example 1)
+
+{% highlight cpp %}
+    // sequence template
+    #include <iostream>
+    using namespace std;
+
+    template <class T, int N>
+    class mysequence {
+        T memblock [N];
+      public:
+        void setmember (int x, T value);
+        T getmember (int x);
+    };
+
+    template <class T, int N>
+    void mysequence<T,N>::setmember (int x, T value) {
+      memblock[x]=value;
+    }
+
+    template <class T, int N>
+    T mysequence<T,N>::getmember (int x) {
+      return memblock[x];
+    }
+
+    int main () {
+      mysequence <int,5> myints;
+      mysequence <double,5> myfloats;
+      myints.setmember (0,100);
+      myfloats.setmember (3,3.1416);
+      cout << myints.getmember(0) << '\n';
+      cout << myfloats.getmember(3) << '\n';
+      return 0;
+    }
+{% endhighlight %}
+
+### C++ (example 2)
+
+{% highlight c++ %}
+    //#define mem_fun1 mem_fun
+    #include <iostream>
+    #include <vector>
+    #include <string>
+    #include <algorithm>
+    #include <functional>
+
+
+    class Person {
+      private:
+        std::string name;
+      public:
+        //...
+        void print () const {
+            std::cout << name << std::endl;
+        }
+        void printWithPrefix (std::string prefix) const {
+            std::cout << prefix << name << std::endl;
+        }
+    };
+
+    void foo (const std::vector<Person>& coll)
+    {
+        using std::for_each;
+        using std::bind2nd;
+        using std::mem_fun_ref;
+
+        // call member function print() for each element
+        for_each (coll.begin(), coll.end(),
+                  mem_fun_ref(&Person::print));
+
+        // call member function printWithPrefix() for each element
+        // - "person: " is passed as an argument to the member function
+        for_each (coll.begin(), coll.end(),
+                  bind2nd(mem_fun_ref(&Person::printWithPrefix),
+                          "person: "));
+    }
+
+
+    void ptrfoo (const std::vector<Person*>& coll)
+                                      // ^^^ pointer !
+    {
+        using std::for_each;
+        using std::bind2nd;
+        using std::mem_fun;
+
+        // call member function print() for each referred object
+        for_each (coll.begin(), coll.end(),
+                  mem_fun(&Person::print));
+
+        // call member function printWithPrefix() for each referred object
+        // - "person: " is passed as an argument to the member function
+        for_each (coll.begin(), coll.end(),
+                  bind2nd(mem_fun(&Person::printWithPrefix),
+                          "person: "));
+    }
+
+
+    int main()
+    {
+        std::vector<Person> coll(5);
+        foo(coll);
+
+        std::vector<Person*> coll2;
+        coll2.push_back(new Person);
+        ptrfoo(coll2);
+    }
+{% endhighlight %}
+
 ### Python
 
 {% highlight python %}
