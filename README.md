@@ -11,5 +11,4 @@ allowed without permission.
 
 - _posts/
 
-All other directories and files are MIT Licensed, feel free to use if you'd
-like.
+All other directories and files are MIT Licensed, please feel free to use.
