@@ -19,7 +19,7 @@ First, rename or delete the origin repository.
 Then add the new default repository location.
 
     ╭─ting@noa ~/code/wting.github.com ‹ruby-1.9.3› ‹master*›
-    ╰─➤  git remote add origin dreamhost:~/git/wting.github.com.git
+    ╰─➤  git remote add dreamhost dh:~/git/wting.github.com.git
 
 Afterwards you have to edit `.git/config` to set the default remote repository:
 
@@ -28,9 +28,9 @@ Afterwards you have to edit `.git/config` to set the default remote repository:
     merge = refs/heads/master
 
 Since we renamed origin to github it has been updated here as well. All we need
-to is change it to point to the new default repository location:
+to do is change it to point to the new remote location:
 
     [branch "master"]
     remote = dreamhost
-    merge = refs/heads/master
+    remote = merge = refs/heads/master
 
