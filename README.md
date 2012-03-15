@@ -43,4 +43,3 @@ from [Yuya Saito](http://www.layouts-the.me/)'s
 - [Font Awesome](http://fortawesome.github.com/Font-Awesome/) / [CC BY
   3.0](http://creativecommons.org/licenses/by/3.0/)
 - [Yuya Saito](https://github.com/studiomohawk/jekyll-theme-the_minimum) / MIT
-  license
