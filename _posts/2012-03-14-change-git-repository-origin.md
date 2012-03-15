@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Change git repository origin"
-category: tags: [git, github, repository, vcs]
+tags: [git, github, repository, vcs]
 ---
 {% include JB/setup %}
 
