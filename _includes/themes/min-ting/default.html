@@ -42,13 +42,13 @@
 			<div class="unit-inner unit-foot-inner">
 				<div class="misc vcard">
 					<h4 style="margin-bottom: 0px;">about</h4>
-					<ul>
-						<li class="contact"><address><span class="fn email">{{ site.author.email }}</span></address></li>
-						<li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">github.com/{{ site.author.github }}</a></li>
-						<li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">twitter.com/{{ site.author.twitter }}</a></li>
-						<li class="flickr"><a href="https://secure.flickr.com/photos/{{ site.author.flickr }}">flickr</a></li>
-						<li class="rss"><a href="http://feeds.feedburner.com/{{ site.author.feedname }}">rss feed</a></li>
-					</ul>
+					<div style="font-size: 24px;">
+						<a href="mailto:{{ site.author.email }}"><i class="icon-envelope"></i></a>
+						<a href="http://github.com/{{ site.author.github }}/" rel="me"><i class="icon-github-sign"></i></a>
+						<a href="http://twitter.com/{{ site.author.twitter }}/" rel="me"><i class="icon-twitter-sign"></i></a>
+						<a href="https://secure.flickr.com/photos/{{ site.author.flickr }}/" rel="me"><i class="icon-camera"></i></a>
+						<a href="http://feeds.feedburner.com/{{ site.author.feedname }}/"><i class="icon-fire"></i></a>
+					</div>
 				</div><!-- misc -->
 				<p class="license">
 					&nbsp;
