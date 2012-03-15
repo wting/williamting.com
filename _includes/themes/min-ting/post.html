@@ -5,14 +5,13 @@
 				<div class="unit-head">
 					<div class="unit-inner unit-head-inner">
 						<h1 class="entry-title">{{ page.title }}</h1>
-						<h5 class="date-publish" style="float: right; margin-top: 0; position: relative; top: -27px; color: #fff;">
+						<h5 class="date-publish" style="margin-top: 0px; text-align: right; color: #fff;">
 							<date class="date-pub" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
 								<span class="month"><abbr>{{ page.date | date: '%B' }}</abbr></span>
 								<span class="day">{{ page.date | date: '%d' }}</span>
 								<span class="year">{{ page.date | date: '%Y' }}</span>
 							</date>
 						</h5>
-						<div style="clear: both;"></div>
 					</div><!-- unit-inner -->
 				</div><!-- unit-head -->
 			</header>
