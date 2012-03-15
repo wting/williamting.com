@@ -6,7 +6,7 @@ tags: [jekyll, theme, markdown]
 {% include JB/setup %}
 
 This is just a simple post to help me test personal customizations of Yuya
-Saito's [the-mininum](https://github.com/studiomohawk/jekyll-theme-the_minimum) theme.
+Saito's [the-minimum](https://github.com/studiomohawk/jekyll-theme-the_minimum) theme.
 
 # h1 heading
 
