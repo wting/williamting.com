@@ -1,5 +1,5 @@
 
-## About
+# About
 
 This is the data for my blog at [williamting.com](http://williamting.com/),
 running off [Jekyll Bootstrap](http://jekyllbootstrap.com/).
@@ -13,5 +13,31 @@ allowed without permission.
 
 All other directories and files are MIT Licensed, please feel free to use.
 
-The theme's original author--Yuya Saito--made no attempt at testing the design
-on IE browsers. I am equally uninclined to go down that rabbit hole.
+The theme's original author made no attempt at testing the design on IE
+browsers. I am equally uninclined to go down that rabbit hole.
+
+## Jekyll-Bootstrap Theme Info
+
+- Theme Name: min-ting
+- Description: A minimalist theme for
+  [Jekyll](https://github.com/mojombo/jekyll)
+via [Jekyll-Bootstrap](http://jekyllbootstrap.com/)'s theming engine. Forked
+from [Yuya Saito](http://www.layouts-the.me/)'s
+[the-minimum](https://github.com/studiomohawk/jekyll-theme-the_minimum) theme.
+- Author: Yuya Saito, William Ting
+
+### How To Use?
+
+1. [Jekyll](https://github.com/mojombo/jekyll)
+2. [Jekyll-Bootstrap](http://jekyllbootstrap.com/)
+
+### Attributions
+
+- [Yuya Saito](https://github.com/studiomohawk/jekyll-theme-the_minimum) / MIT
+  license
+- [Jekyll-Bootstrap](http://jekyllbootstrap.com/) / [CC BY-NC-SA
+  3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/)
+- [Modernizr](http://www.modernizr.com/) / MIT/BSD license
+- [Frameless](http://framelessgrid.com/) / [CC0](http://creativecommons.org/publicdomain/zero/1.0/)
+- [HTML5 Boilerplate](http://html5boilerplate.com/) / [The
+  Unlicense](http://unlicense.org) aka Public Domain
