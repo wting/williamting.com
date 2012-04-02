@@ -15,18 +15,18 @@ for a plethora of reasons.
 
 First, rename or delete the origin repository.
 
-    ting@noa ~/code/wting.github.com ‹ruby-1.9.3› ‹master*›
-    ➤  git remote rename origin github
+    ╭─ting@noa ~/code/wting.github.com ‹ruby-1.9.3› ‹master*›
+    ╰─➤  git remote rename origin github
 
 Then add the new default repository location.
 
-    ting@noa ~/code/wting.github.com ‹ruby-1.9.3› ‹master*›
-    ➤  git remote add dreamhost dh:~/git/wting.github.com.git
+    ╭─ting@noa ~/code/wting.github.com ‹ruby-1.9.3› ‹master*›
+    ╰─➤  git remote add dreamhost dh:~/git/wting.github.com.git
 
 ### Switch branch to track new remote
 
-    ting@noa ~/code/wting.github.com ‹ruby-1.9.3› ‹master*›
-    ➤  git push -u dreamhost
+    ╭─ting@noa ~/code/wting.github.com ‹ruby-1.9.3› ‹master*›
+    ╰─➤  git push -u dreamhost
 
 #### Manual Method
 
