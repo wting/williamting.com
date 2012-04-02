@@ -375,18 +375,22 @@ pre {
 	margin-left: 0;
 	margin-right: 0;
 }
-.unit-article p code, .unit-article li code {
+.unit-article p code {
 	margin: 0 2px;
 	padding: 2px 5px;
 	white-space: nowrap;
-	border: 1px solid #CCC;
 	background-color: #F8F8F8;
+	border: 1px solid #CCC;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box;
+}
+.unit-article li > code {
+	background-color: transparent;
+	border: none;
 }
 .unit-article img {
 	display: block;
