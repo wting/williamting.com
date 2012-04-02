@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Set Up Ruby on Rails on DreamHost"
-tags: [ruby, rails, rvm, dreamhost, jekyll]
+tags: [ruby, rails, rvm, dreamhost]
 ---
 {% include JB/setup %}
 
