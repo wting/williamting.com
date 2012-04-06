@@ -34,7 +34,7 @@ After logging in, users will have the ability to:
 
 The goal for the API is to make it extensible and adaptable for various storage systems.
 
-![Architecture Overview](./overview.png)
+![Architecture Overview](http://williamting.com/gsoc/overview.png)
 
 The browser will spawn a sync client thread upon startup. The sync client will then poll the sync server every X minutes and update when necessary.
 
