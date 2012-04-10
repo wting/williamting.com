@@ -9,7 +9,9 @@ running off [Jekyll Bootstrap](http://jekyllbootstrap.com/).
 Content in the following directories is copyrighted by William Ting. No reuse is
 allowed without permission.
 
-0.2.13 - stable and versioned using [semantic versioning](http://semver.org/).
+    gsoc/
+    images/
+    _posts/
 
 All other directories and files are MIT Licensed unless otherwise defined,
 please feel free to use.
