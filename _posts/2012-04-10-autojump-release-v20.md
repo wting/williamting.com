@@ -10,7 +10,7 @@ I just pushed out autojump release v20 onto GitHub this afternoon. Most of the c
 
 If you spend any significant time at the command line, I suggest giving it a try by [downloading](https://github.com/joelthelion/autojump/downloads) the source or checking out the [code](https://github.com/joelthelion/autojump). Feel free to shoot any suggestions or problems on the [issues](https://github.com/joelthelion/autojump/issues) page.
 
-**Release Notes**:
+#### Release Notes
 
 - Man page and --help has been overhauled to provide better documentation and usage scenarios.
 - Installation scripts now act dependent on current environmental settings.
