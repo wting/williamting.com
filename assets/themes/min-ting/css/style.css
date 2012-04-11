@@ -25,7 +25,7 @@ Calculation should be done via	http://j.mp/rNg5uA
 
 No styleguide reference.
 */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400|Inconsolata);
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,Open+Sans:400italic,400|Inconsolata);
 
 body {
 	font-family: 'Proxima Nova', 'Open Sans', 'Helvetica Neue', Helvetica, 'Segoe UI', Sans-Serif;
@@ -74,7 +74,8 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: junctionregularRegular, "Helvetica Neue", Helvetica, sans-serif;
+	/*font-family: 'Junction', 'Helvetica Neue', Helvetica, sans-serif;*/
+	font-family: 'Droid Serif', serif;
 	font-weight: bold;
 }
 h1, .h1 {
@@ -154,23 +155,19 @@ No styleguide reference.
 @green:		 #859900;
 
 */
-/* Junction Font
+
+/* LindenHill Font
  * http://www.theleagueofmoveabletype.com/
  * Using for Logo and headers
-*/
+ */
+/*
 @font-face {
-	font-family: 'junctionregularRegular';
-	src: url('/assets/themes/min-ting/font/Junction-webfont.eot');
-	src: url('/assets/themes/min-ting/font/Junction-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/themes/min-ting/font/Junction-webfont.woff') format('woff'), url('/assets/themes/min-ting/font/Junction-webfont.ttf') format('truetype'), url('/assets/themes/min-ting/font/Junction-webfont.svg#junctionregularRegular') format('svg');
+	font-family: 'Linden Hill';
+	src: url('/assets/themes/min-ting/font/LindenHill-webfont.eot');
+	src: url('/assets/themes/min-ting/font/LindenHill-webfont.eot?#iefix') format('embedded-opentype'), url('/assets/themes/min-ting/font/LindenHill-webfont.woff') format('woff'), url('/assets/themes/min-ting/font/LindenHill-webfont.ttf') format('truetype'), url('/assets/themes/min-ting/font/LindenHill-webfont.svg#LindenHillregularRegular') format('svg');
 	font-weight: normal !important;
 	font-style: normal;
-}
-
-/*
- * Fresca font
- * https://www.google.com/webfonts/specimen/Fresca
-*/
-/*@import url(http://fonts.googleapis.com/css?family=Fresca);*/
+}*/
 
 /*
 LESS helper
@@ -243,13 +240,15 @@ pre {
 /* HEADER
 --------------------------------------------------------------------------------- */
 .the-header .logo {
-	font-family: junctionregularRegular, "Helvetica Neue", Helvetica, sans-serif;
+	/*font-family: 'Junction', 'Helvetica Neue', Helvetica, sans-serif;*/
+	font-family: 'Droid Serif', serif;
 	margin: 0;
 }
 .the-header .logo a:visited {
 	color: #2d2d2d;
 }
 .the-header .nav-global {
+	font-family: 'Droid Serif', serif;
 	text-transform: uppercase;
 }
 .the-header .nav-global .forkme {
