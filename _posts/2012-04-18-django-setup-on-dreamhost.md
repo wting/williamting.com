@@ -8,6 +8,7 @@ tags: [python, django, dreamhost, pythonbrew, virtualenv]
 
 ## Table of Contents
 
+<pre>
 - Overview
 - Automatic Install
 - Manual Install via pythonbrew
@@ -17,6 +18,7 @@ tags: [python, django, dreamhost, pythonbrew, virtualenv]
     - Install Python Tools
     - Create Isolated Environment, Install Django
 - Final Words
+</pre>
 
 ## Overview
 
