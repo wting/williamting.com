@@ -2,7 +2,7 @@
 # Written by William Ting for the following blog post:
 # http://williamting.com/2012/04/18/django-setup-on-dreamhost/
 
-rcfile="${HOME}/.zshrc"
+rcfile="${HOME}/.bashrc"
 version="2.7.3"
 setuptools_version="2.7"
 tmp_dir="${HOME}/tmp-${RANDOM}"
@@ -36,6 +36,7 @@ if [[ ${1} == "--pythonbrew" ]]; then
 	echo "alias pb='pythonbrew'" >> ${rcfile}
 	echo "export PYTHONPATH=~/.pythonbrew/pythons/Python-${version}/lib" >> ${rcfile}
 	echo "[[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc" >> ${rcfile}
+	echo "" >> ${rcfile}
 
 	alias pb='pythonbrew'
 	export PYTHONPATH=~/.pythonbrew/pythons/Python-${version}/lib
@@ -83,6 +84,7 @@ elif [[ ${1} == "--source" ]]; then
 	echo "# Load custom python installation" >> ${rcfile}
 	echo -e "export PATH=~/opt/python-${version}/bin:\${PATH}" >> ${rcfile}
 	echo "export PYTHONPATH=~/opt/python-${version}/lib" >> ${rcfile}
+	echo "" >> ${rcfile}
 
 	export PATH=~/opt/python-${version}/bin:\${PATH} >> ${rcfile}
 	export PYTHONPATH=~/opt/python-${version}/lib >> ${rcfile}
