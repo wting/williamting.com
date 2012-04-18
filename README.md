@@ -11,6 +11,7 @@ allowed without permission.
 
     gsoc/
     images/
+    scripts/
     _posts/
 
 All other directories and files are MIT Licensed unless otherwise defined,

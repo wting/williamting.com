@@ -34,7 +34,7 @@ There are two methods of installation, from source or via pythonbrew. Pythonbrew
 
 I've written a script to help streamline the instructions below. Log in to your Dreamhost account via ssh and download the script:
 
-    $ ssh user@dreamhost.com
+    $ ssh user@domain.com
     $ wget http://williamting.com/scripts/dreamhost_python_setup.sh
 
 The script defaults to `.bashrc` and Python v2.7.3. To change these settings, edit the script and modify the following variables: `rcfile`, `version`, `setuptools_version`. Only v2.x is supported through the script as setuptools is not necessary for Python v3.x.
