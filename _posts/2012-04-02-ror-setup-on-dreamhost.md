@@ -23,21 +23,21 @@ local single user version into `~/.rvm/`.
 
 1. Install RVM, note the required space between the two angled brackets `< <`
 
-        ➤ bash -s stable < <(curl -s
+        $ bash -s stable < <(curl -s
         https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
 
 2. Modify your `.bashrc` to add a path to RVM and to load it on new shells:
 
-        ➤ PATH=$PATH:$HOME/.rvm/bin
-        ➤ [[ -s ~/.rvm/scripts/rvm ]] && . ~/.rvm/scripts/rvm
+        $ PATH=$PATH:$HOME/.rvm/bin
+        $ [[ -s ~/.rvm/scripts/rvm ]] && . ~/.rvm/scripts/rvm
 
 3. Reload your shell
 
-        ➤ source ~/.bashrc
+        $ source ~/.bashrc
 
 4. Check any other necessary requirements and follow relevant instructions:
 
-        ➤ rvm requirements
+        $ rvm requirements
 
 Read up on [Gem Sets](http://beginrescueend.com/gemsets/basics/) for even more
  control over gems compartmentalization.
@@ -46,15 +46,15 @@ Read up on [Gem Sets](http://beginrescueend.com/gemsets/basics/) for even more
 
 1. Install a Ruby version to work on:
 
-        ➤ rvm install 1.9.3
+        $ rvm install 1.9.3
 
 2. Switch to the installed version of Ruby and make it default:
 
-        ➤ rvm use 1.9.3 --default
+        $ rvm use 1.9.3 --default
 
 3. Install Rails
 
-        ➤ gem install rails
+        $ gem install rails
 
 ### DreamHost Setup
 
