@@ -24,8 +24,8 @@ There are two methods of installation, from source or via pythonbrew. Pythonbrew
 
 2. Add the following lines to the end of `~/.bashrc`:
 
-        export PYTHONPATH=~/.pythonbrew/pythons/Python-2.7.3/lib
         [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
+        export PYTHONPATH=~/.pythonbrew/pythons/Python-2.7.3/lib
 
     Unfortunately the `export PYTHONPATH` line is necessary and must be manually updated until the developer fixes this [bug](https://github.com/utahta/pythonbrew/issues/74).
 
