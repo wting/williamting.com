@@ -6,21 +6,20 @@ tags: [python, django, dreamhost, pythonbrew, virtualenv]
 ---
 {% include JB/setup %}
 
-## Table of Contents
-
-<pre>
-- Overview
-- Automatic Install
-- Manual Install via pythonbrew
+<pre id="toc">
+- <a href="#overview">Overview</a>
+- <a href="#auto">Automatic Install</a>
+- <a href="#pythonbrew">Manual Install via pythonbrew</a>
     - Install Python Tools
     - Create Isolated Environment, Install Django
-- Manual Install via Source Code
+- <a href="#source">Manual Install via Source Code</a>
     - Install Python Tools
     - Create Isolated Environment, Install Django
-- Final Words
+- <a href="#final">Final Words</a>
 </pre>
 
-## Overview
+<a name="overview"> </a>
+### Overview
 
 Dreamhost is stable, cheap, web hosting with good support. However one of the biggest drawbacks is the outdated Ruby and Python installations on the Debian servers. At the time of this writing, the latest Python is v2.7.3 while the server is still on v2.5.2.
 
@@ -28,9 +27,10 @@ While I've mentioned how simple it is to [set up Ruby on Rails for Dreamhost][ro
 
 Trying to install a custom Python environment has been an exercise in frustration, but hopefully the instructions below can help others.
 
-There are two methods of installation, from source or via pythonbrew. Pythonbrew helps streamline the process and is preferable. If you prefer installing from source, jump to the [source code instructions below](#sourcecodeinstructions).
+There are two methods of installation, from source or via pythonbrew. Pythonbrew helps streamline the process and is preferable. If you prefer installing from source, jump to the [source code instructions below](#source).
 
-## Automatic Install
+<a name="auto"> </a>
+### Automatic Install
 
 I've written a script to help streamline the instructions below. Log in to your Dreamhost account via ssh and download the script:
 
@@ -45,7 +45,8 @@ Run the script, choosing `--pythonbrew` or `--source` installation type.
 
 That's it! Jump down to [final words](#final).
 
-## Manual Install Python via pythonbrew
+<a name="pythonbrew"> </a>
+### Manual Install Python via pythonbrew
 
 1. Run the following script to install into `~/.pythonbrew/`:
 
@@ -97,8 +98,8 @@ That's it! Jump down to [final words](#final).
 
 For more information on how to use pythonbrew refer to the [documentation][pb].
 
-<a name="sourcecodeinstructions"> </a>
-## Manual Install Python via Source Code
+<a name="source"> </a>
+### Manual Install Python via Source Code
 
 1. Download the preferred version of Python. Replace 2.7.3 with your preferred version.
 
@@ -160,7 +161,7 @@ For more information on how to use pythonbrew refer to the [documentation][pb].
         $ pip install django
 
 <a name="final"> </a>
-## Final Words
+### Final Words
 
 Don't forget to [enable Passenger](http://wiki.dreamhost.com/Passenger#Configuration_Steps) on your domain for web apps.
 
