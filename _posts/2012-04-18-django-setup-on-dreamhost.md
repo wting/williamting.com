@@ -10,7 +10,7 @@ tags: [python, django, dreamhost, pythonbrew, virtualenv]
 
 Dreamhost is stable, cheap, web hosting with good support. However one of the biggest drawbacks is the outdated Ruby and Python installations on the Debian servers. At the time of this writing, the latest Python is v2.7.3 while the server is still on v2.5.2.
 
-While I've mentioned how simple it is to [upgrade and setup Ruby on Rails for Dreamhost][ror], the process is streamlined due to RVM's maturity. Unfortunately the Python stack has no equivalent, instead using a plethora of tools to provide the same functionality via [pythonbrew][pb], [pip][pip], and [virtualenv][venv].
+While I've mentioned how simple it is to [set up Ruby on Rails for Dreamhost][ror], the process is streamlined due to RVM's maturity. Unfortunately the Python stack has no equivalent, instead using a plethora of tools to provide the same functionality via [pythonbrew][pb], [pip][pip], and [virtualenv][venv].
 
 Trying to install a custom Python environment has been an exercise in frustration, but hopefully the instructions below can help others.
 
@@ -131,6 +131,10 @@ For more information on how to use pythonbrew refer to the [documentation][pb].
         $ pip install django
 
 ## Final Words
+
+Don't forget to [enable Passenger](http://wiki.dreamhost.com/Passenger#Configuration_Steps) on your domain for web apps.
+
+With this set up you now have an environment that can be easily updated or frozen at your discretion.
 
 It was a long road, but now you're ready to start hosting Django apps on your Dreamhost account!
 

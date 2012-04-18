@@ -15,7 +15,7 @@ The steps below need to be performed on at a [DreamHost SSH
 prompt](http://wiki.dreamhost.com/SSH), but should also be performed locally to
 setup the same development environment.
 
-### Setting Up RVM
+## Setting Up RVM
 
 [Ruby Version Manager](http://beginrescueend.com/) (RVM) is a great tool for
 maintaining environment between different machines. This setup will install a
@@ -42,7 +42,7 @@ local single user version into `~/.rvm/`.
 Read up on [Gem Sets](http://beginrescueend.com/gemsets/basics/) for even more
  control over gems compartmentalization.
 
-### Setting Up Ruby on Rails
+## Setting Up Ruby on Rails
 
 1. Install a Ruby version to work on:
 
@@ -56,14 +56,8 @@ Read up on [Gem Sets](http://beginrescueend.com/gemsets/basics/) for even more
 
         $ gem install rails
 
-### DreamHost Setup
+## Final Words
 
-Follow these [configuration
-steps](http://wiki.dreamhost.com/Passenger#Configuration_Steps)
-to configure your domain on the DreamHost panel.
+Don't forget to [enable Passenger](http://wiki.dreamhost.com/Passenger#Configuration_Steps) on your domain for web apps.
 
-### Conclusion
-
-With this configuration you have a stable environment that you can update at
-your choosing, with the ability to use the latest Rails (v3.2.3) instead of the
-outdated system version (v3.0.3).
+With this set up you now have an environment that can be easily updated or frozen at your discretion.
