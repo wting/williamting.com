@@ -88,7 +88,7 @@ For more information on how to use pythonbrew refer to the [documentation][pb].
 3. Add the following lines at the end of `~.bashrc`:
 
         export PATH=~/opt/python-2.7.3/bin:"${PATH}"
-        export PYTHONPATH=~/opt/python-2.7.3/lib:"${PYTHONPATH}"
+        export PYTHONPATH=~/opt/python-2.7.3/lib
 
 4. Reload configuration.
 
