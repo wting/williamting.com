@@ -67,6 +67,7 @@ if [[ ${1} == "--pythonbrew" ]]; then
 	echo
 	echo "Please run:"
 	echo
+	echo "    source ${rcfile}"
 	echo "    pb switch ${version}"
 	echo
 elif [[ ${1} == "--source" ]]; then
