@@ -10,9 +10,9 @@ I was interested in implementing an incremental, infinite list of primes and cam
 
 Traditionally generating primes via [Sieve of Eratosthenes][sieve] involves crossing off all the multiples of prime *p* up to an arbitrary number *n*.
 
-For an incremental list, we cross off multiples of prime when evaluating the number rather than ahead of time. Afterwards, we store the next composite number and the prime number back in the table. This emulates an iterator's behavior by storing the state of the prime multiples (composite number) and the step size (prime number).
+For an incremental list, cross off multiples of prime when evaluating the number rather than ahead of time. Afterwards, store the next composite number and the prime number back in the table. This emulates an iterator's behavior by storing the state of the prime multiples (composite number) and the step size (prime number).
 
-For example, instead of eliminating all the multiples of 2 from an array of size *n*, we merely store the first composite and step size (4,2) in our table. Progressing through the natural set starting from 2, any numbers not already in the table are primes.
+For example, instead of eliminating all the multiples of 2 from an array of size *n*, store the first composite and step size (4,2) in the table. Progressing through the natural set starting from 2, any number not in the table is considered prime.
 
 {% highlight python %}
 def gen_prime():
@@ -28,9 +28,12 @@ def gen_prime():
             yield i
 {% endhighlight %}
 
-It's fairly straight forward at this point. I store the "iterator" as a key-value lookup in a dictionary. If the number is in the table I increment it. If not, I yield the prime number and add the next multiple of the prime back into the table.
+I've stored the "iterator" as a key-value lookup in a dictionary. It's fairly straight forward at this point:
 
-The problem occurs when there's a collision of a composite number from two different primes. For example, 12 includes both primes 2 and 3 as divisors. The above code would store (12,3) in the table, only to be overwritten later on by (12,2). To solve this I store the step as a list and append if it exists. As a result, I need to parse all the steps when coming across an composite in the table.
+- If the number is in the table increment it.
+- If not, add the prime composite and number into the table, yield the prime number.
+
+A collision occurs when a composite number has more than one prime divisor. For example, 12 is divisible by both 2 and 3. The above code would store (12,3) in the table, only to be overwritten later on by (12,2). To solve this, I change the value store to a list and append to it if the composite number already exists. As a result, I need to modify the value evaluation behavior as well.
 
 {% highlight python %}
 def gen_prime():
@@ -51,7 +54,7 @@ def gen_prime():
         i += 1
 {% endhighlight %}
 
-No doubt this code can be further improved and optimized, but the infinite prime number generator can be useful in certain situations as is.
+No doubt this code can be further improved and optimized, but an infinite prime number generator can be useful as is.
 
 [sieve]: https://en.wikipedia.org/wiki/Sieve_of_Eratosthenes
 [jfp]: http://www.cs.hmc.edu/~oneill/papers/Sieve-JFP.pdf
