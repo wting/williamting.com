@@ -31,7 +31,7 @@ def gen_prime():
 I've stored the "iterator" as a key-value lookup in a dictionary. It's fairly straight forward at this point:
 
 - If the number is in the table increment it.
-- If not, add the prime composite and number into the table, yield the prime number.
+- If not, add the composite number and prime number into the table, yield the prime.
 
 A collision occurs when a composite number has more than one prime divisor. For example, 12 is divisible by both 2 and 3. The above code would store (12,3) in the table, only to be overwritten later on by (12,2). To solve this, I change the value store to a list and append to it if the composite number already exists. As a result, I need to modify the value evaluation behavior as well.
 
