@@ -21,7 +21,7 @@ function install_tools {
 	curl -L https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python
 
 	# Install django
-	pip install django
+	#pip install django
 }
 
 if [[ ${1} == "--pythonbrew" ]]; then
