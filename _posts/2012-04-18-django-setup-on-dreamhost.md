@@ -43,7 +43,7 @@ Run the script, choosing `--pythonbrew` or `--source` installation type.
 
     $ bash ./dreamhost_python_setup.sh --pythonbrew
 
-That's it! Jump down to [final words](#final).
+Afterwards, create a virtualenv before install Django via pip. That's it! Jump down to [final words](#final).
 
 <a name="pythonbrew"> </a>
 ### Manual Install Python via pythonbrew
@@ -57,7 +57,7 @@ That's it! Jump down to [final words](#final).
         [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
         export PYTHONPATH=~/.pythonbrew/pythons/Python-2.7.3/lib
 
-    Unfortunately the `export PYTHONPATH` line is necessary and must be manually updated until the developer fixes this [bug](https://github.com/utahta/pythonbrew/issues/74).
+    <strike>Unfortunately the `export PYTHONPATH` line is necessary and must be manually updated until the developer fixes this [bug](https://github.com/utahta/pythonbrew/issues/74).</strike>
 
 3. Reload configuration.
 
