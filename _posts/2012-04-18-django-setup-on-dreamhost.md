@@ -52,12 +52,9 @@ Afterwards, create a virtualenv before install Django via pip. That's it! Jump d
 
         $ curl -L https://raw.github.com/utahta/pythonbrew/master/pythonbrew-install | bash
 
-2. Add the following lines to the end of `~/.bashrc`:
+2. Add the following line to the end of `~/.bashrc`:
 
         [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
-        export PYTHONPATH=~/.pythonbrew/pythons/Python-2.7.3/lib
-
-    <strike>Unfortunately the `export PYTHONPATH` line is necessary and must be manually updated until the developer fixes this [bug](https://github.com/utahta/pythonbrew/issues/74).</strike>
 
 3. Reload configuration.
 
@@ -168,6 +165,8 @@ Don't forget to [enable Passenger](http://wiki.dreamhost.com/Passenger#Configura
 With this set up you now have an environment that can be easily updated or frozen at your discretion.
 
 It was a long road (unless you went the automatic installation route), but now you're ready to start hosting Django apps on your Dreamhost account!
+
+If you ever want to remove PythonBrew, either disable it by using `pythonbrew off` or delete the `~/.pythonbrew/` folder.
 
 [pb]: http://pypi.python.org/pypi/pythonbrew/
 [pip]: http://www.pip-installer.org/en/latest/index.html
