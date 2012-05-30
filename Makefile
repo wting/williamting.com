@@ -22,5 +22,5 @@ github: build less
 	rm -fr ${OUTPUT}
 
 web: build less
-	rsync -hvaxzlEP --stats --del ${OUTPUT} dh:~/williamting.com/public/
+	rsync -hvaxzlEP --stats --del ${OUTPUT}/ dh:~/williamting.com/public/
 	rm -fr ${OUTPUT}
