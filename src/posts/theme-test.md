@@ -1,6 +1,7 @@
 Author: William Ting
 Date: 2012-04-25
 Title: This Is A Theme Testing Post
+Category: frontend, webdev
 Tags: pelican, theme, testing, ui
 Status: draft
 
