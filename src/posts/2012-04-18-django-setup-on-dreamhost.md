@@ -12,11 +12,11 @@ While I've mentioned how simple it is to [set up Ruby on Rails for Dreamhost][ro
 Trying to install a custom Python environment has been an exercise in frustration, but hopefully the following instructions can help others.
 
 ### Automatic Install
-
-I've written a script to help streamline the instructions below. Log in to your Dreamhost account via ssh and download the script:
+I've written a [script](https://gist.github.com/2839765) to help streamline the instructions below. Log in to your Dreamhost account via ssh and download the script:
 
     $ ssh user@domain.com
-    $ wget http://williamting.com/scripts/dreamhost_python_setup.sh
+    $ git clone git://gist.github.com/2839765.git ~/tmp
+    $ cd ~/tmp
 
 It's a fairly simple script, so make sure to read it over to make sure there is nothing malicious.
 
@@ -56,5 +56,5 @@ If you ever want to remove PythonBrew, either disable it by using `pythonbrew of
 
 [pb]: http://pypi.python.org/pypi/pythonbrew/
 [pip]: http://www.pip-installer.org/en/latest/index.html
-[ror]: http://williamting.com/2012/04/02/ror-setup-on-dreamhost
+[ror]: http://williamting.com/posts/2012/04/02/set-up-ruby-on-rails-on-dreamhost/
 [venv]: http://pypi.python.org/pypi/virtualenv
