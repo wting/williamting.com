@@ -4,7 +4,7 @@ CFLAGS = -s ./src/settings.py ./src -o ${OUTPUT}
 SVBTLE = ./src/themes/svbtle/static/css
 
 build: less
-	#rm -rf ${OUTPUT}
+	#@-rm -rf ${OUTPUT}
 	${CC} ${CFLAGS}
 
 less:
@@ -22,7 +22,6 @@ github: build less
 	rm -fr ${OUTPUT}
 
 web: build less
-	@-rm -fr ${OUTPUT}
 	rsync -hvaxzlEP --stats --del ${OUTPUT}/ dh:~/williamting.com/public/
 	rm -fr ${OUTPUT}
 	git push all
