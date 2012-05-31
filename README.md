@@ -16,4 +16,4 @@ All other directories and files are MIT Licensed unless otherwise defined.
 
 ## Theme Info
 
-[Svbtle](https://github.com/wting/pelican-svbtle)
+The theme is actively worked on by me and thus symlinked rather than embedded into this project. To download it separately, please visit the [pelican-svbtle repo](https://github.com/wting/pelican-svbtle).
