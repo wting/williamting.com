@@ -18,7 +18,7 @@ RELATIVE_URLS = True
 MARKUP = 'md'
 
 FEED_DOMAIN = SITEURL
-FEED_RSS = 'feeds/all.atom.xml'
+FEED = 'feeds/all.atom.xml'
 CATEGORY_FEED = 'feeds/category.%s.atom.xml'
 TAG_FEED = 'feeds/tag.%s.atom.xml'
 
@@ -29,7 +29,7 @@ LINKS = (
         ('@_wting', 'https://twitter.com/_wting'),
         ('email', 'mailto:william.h.ting at gmail.com'),
         ('github', 'https://github.com/wting'),
-        ('feed', FEED_DOMAIN + FEED_RSS),
+        ('feed', FEED_DOMAIN + '/' + FEED),
         )
 
 DEFAULT_PAGINATION = 5
@@ -42,5 +42,5 @@ STATIC_PATHS = ["assets", ]
 # A list of files to copy from the source to the destination
 FILES_TO_COPY = (
         ('src/robots.txt', 'robots.txt'),
-        #('src/images/favicon.ico','favicon.ico'),
+        ('src/images/favicon.ico','favicon.ico'),
         )
