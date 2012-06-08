@@ -2,8 +2,8 @@
 AUTHOR = 'William Ting'
 EMAIL = 'william.h.ting at gmail.com'
 SITENAME = 'William Ting'
-SITEURL = 'http://williamting.com'
 #TAGLINE = 'has founded a bunch of ideas'
+SITEURL = 'http://williamting.com'
 TIMEZONE = 'Pacific/Honolulu'
 DEFAULT_LANG = 'en'
 LOCALE = ''
@@ -41,6 +41,6 @@ STATIC_PATHS = ["assets", ]
 
 # A list of files to copy from the source to the destination
 FILES_TO_COPY = (
-        ('src/robots.txt', 'robots.txt'),
-        ('src/images/favicon.ico','favicon.ico'),
+        ('robots.txt', 'robots.txt'),
+        ('images/favicon.ico','favicon.ico'),
         )
