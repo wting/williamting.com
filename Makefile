@@ -20,7 +20,7 @@ github: build less
 	git push origin gh-pages
 	rm -fr ${OUTPUT}
 
-public: build less
+public: clean less build
 	rsync -hvaxzlEP --stats --del ${OUTPUT}/ dh:~/williamting.com/public/
 	rm -fr ${OUTPUT}
 	git push all

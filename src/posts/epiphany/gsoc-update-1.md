@@ -2,7 +2,6 @@ Author: William Ting
 Date: 2012-06-18
 Title: Firefox Sync Server Client Overview
 Tags: gnome, gsoc, epiphany, firefox, sync
-Status: draft
 
 Since my sync implementation uses Firefox's Sync Server, one of the first steps I took was to run a copy of the server locally. Fortunately, Mozilla has great [documentation][ff-doc] so it was a straightforward process.
 
