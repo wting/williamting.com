@@ -4,16 +4,15 @@ CFLAGS = -s ./src/settings.py ./src -o ${OUTPUT}
 SVBTLE = ./src/themes/svbtle/static/css
 
 build: less
-	#@-rm -rf ${OUTPUT}
+	@-rm -rf ${OUTPUT}
 	${CC} ${CFLAGS}
 
 less:
 	lessc -x ${SVBTLE}/style.less > ${SVBTLE}/style.css
 
-reload: less
-	${CC} ${CFLAGS} --autoreload
-
-server:
+local: less
+	${CC} ${CFLAGS} --autoreload &
+	sleep 2s
 	cd ${OUTPUT} && python -m SimpleHTTPServer
 
 github: build less
@@ -21,7 +20,10 @@ github: build less
 	git push origin gh-pages
 	rm -fr ${OUTPUT}
 
-web: build less
+public: build less
 	rsync -hvaxzlEP --stats --del ${OUTPUT}/ dh:~/williamting.com/public/
 	rm -fr ${OUTPUT}
 	git push all
+
+clean:
+	@-rm -rf public/
