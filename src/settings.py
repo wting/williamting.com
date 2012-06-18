@@ -37,7 +37,7 @@ REVERSE_ARCHIVE_ORDER = True
 DISPLAY_PAGES_ON_MENU = True
 
 # static paths will be copied under the same name
-STATIC_PATHS = ["assets", ]
+STATIC_PATHS = ["images", ]
 
 # A list of files to copy from the source to the destination
 FILES_TO_COPY = (
