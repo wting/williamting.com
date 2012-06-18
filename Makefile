@@ -27,3 +27,4 @@ public: clean less build
 
 clean:
 	@-rm -rf public/
+	@killall pelican
