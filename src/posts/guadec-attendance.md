@@ -1,8 +1,7 @@
 Author: William Ting
-Date: 2012-06-20
+Date: 2012-06-29
 Title: Going to GUADEC!
 Tags: gnome, guadec
-Status: draft
 
 I was recently sponsored by the GNOME Travel Committee to go to [GUADEC][conf]! I'm pretty excited about attending the conference, participating in hackathons, and visiting Europe for the first time.
 
