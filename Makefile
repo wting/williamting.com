@@ -10,7 +10,7 @@ build: less
 less:
 	lessc -x ${SVBTLE}/style.less > ${SVBTLE}/style.css
 
-local: less
+local: clean less
 	${CC} ${CFLAGS} --autoreload &
 	sleep 2s
 	cd ${OUTPUT} && python -m SimpleHTTPServer
