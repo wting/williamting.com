@@ -7,7 +7,7 @@ I was recently sponsored by the GNOME Travel Committee to go to [GUADEC][conf]! 
 
 I've also submitted a proposal to give a Lightning Talk, so hopefully I'll get to present my project at the conference as well.
 
-![guadec attendance badge](http://williamting.com/static/images/guadec-attendance.png)
-![guadec sponsorship badge](http://williamting.com/static/images/guadec-sponsored.png)
+![guadec attendance badge](http://williamting.com/static/images/guadec/attendance.png)
+![guadec sponsorship badge](http://williamting.com/static/images/guadec/sponsored.png)
 
 [conf]: http://guadec.org/
