@@ -14,11 +14,6 @@ Jacob
 ## Totem - Bastien Nocera
 
 - xine-lib -> gstreamer
-Author: William Ting
-Date: 2012-07-27
-Title: GUADEC Day 2
-Tags: gnome, guadec, ocr, feeder
-Status: draft
 
 ## OCR Feeder - Joaquim Rocha
 
@@ -81,11 +76,6 @@ Status: draft
 - gamification / monetization of package managers
 
 ## Lightning Talk
-Author: William Ting
-Date: 2012-07-27
-Title: GUADEC Day 3
-Tags: gnome, guadec
-Status: draft
 
 ## University Students
 
