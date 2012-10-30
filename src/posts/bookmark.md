@@ -2,7 +2,7 @@ Author: William Ting
 Date: 2012-10-30
 Title: Why We Bookmark
 Tags: bookmark, reference, chrome, extension, saving
-Status: draft
+Status: published
 
 Brian Groudan over at Mozilla conducted a [study][moz] into how and why users
 bookmark URLs.  I think it can be further simplified even further into
