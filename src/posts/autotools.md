@@ -4,7 +4,11 @@ Title: Autotools Tutorial
 Tags: c, c++, autotools, automake, autoconf, gnome
 Status: draft
 
-In the past I've always handcrafted my own Makefiles. However, GNOME uses GNU Autotools (Autoconf, Automake, Libtools) to build and install the program. Automake is merely one piece of the toolchain, responsible for converting a Makefile.am into a usable Makefile. These tools present end users with the familiar `./configure && make && make install` build process.
+In the past I've always handcrafted my own Makefiles. However, GNOME uses GNU
+Autotools (Autoconf, Automake, Libtools) to build and install the program.
+Automake is merely one piece of the toolchain, responsible for converting a
+Makefile.am into a usable Makefile. These tools present end users with the
+familiar `./configure && make && make install` build process.
 
 ![autoconf flowchart](/images/autoconf-process.png)
 
@@ -12,9 +16,14 @@ In the past I've always handcrafted my own Makefiles. However, GNOME uses GNU Au
 
 ### make and configure
 
-Put simply, the `make` tool uses the *Makefile* file in a project directory to build certain targets, which may involve compiling, linking, and resolving dependencies. Writing Makefiles is fairly straightforward, but more info can be found in the [manual][make-man].
+Put simply, the `make` tool uses the *Makefile* file in a project directory to
+build certain targets, which may involve compiling, linking, and resolving
+dependencies. Writing Makefiles is fairly straightforward, but more info can be
+found in the [manual][make-man].
 
-On the other hand, `configure` scripts are used to enable cross-platform compiling. It interprets a *Makefile.in* file and then creates a platform-specific *Makefile*.
+On the other hand, `configure` scripts are used to enable cross-platform
+compiling. It interprets a *Makefile.in* file and then creates a
+platform-specific *Makefile*.
 
 ### autoconf
 
@@ -38,7 +47,8 @@ Let's assume the following project structure:
 
         $ autoscan
 
-    `autoscan` creates *configure.scan* by performing a quick analysis on the file structures. Rename the created file.
+    `autoscan` creates *configure.scan* by performing a quick analysis on the
+    file structures. Rename the created file.
 
         $ mv configure.scan configure.ac
 
@@ -55,18 +65,22 @@ Let's assume the following project structure:
         AC_PROG_CC
         AC_PROG_CXX
 
-    Only one of the above should be used, determines which compilers should be used. Use [AC_PROG_CC][ac_prog_cc] for C programs, and [AC_PROG_CXX][ac_prog_cxx] for C++.
+    Only one of the above should be used, determines which compilers should be
+    used. Use [AC_PROG_CC][ac_prog_cc] for C programs, and
+    [AC_PROG_CXX][ac_prog_cxx] for C++.
 
 
 4. Generate *configure*.
 
         $ autoconf
 
-    This generates `autom4te.cache/` and `configure`. The first directory being a cache folder for autoconf tools and the latter script for end users.
+    This generates `autom4te.cache/` and `configure`. The first directory being
+    a cache folder for autoconf tools and the latter script for end users.
 
 ### automake
 
-`automake` looks for a file called *Makefile.am* to then create *Makefile.in*. This is later used by `configure`.
+`automake` looks for a file called *Makefile.am* to then create *Makefile.in*.
+This is later used by `configure`.
 
 1. Create *Makefile.am*.
 
@@ -83,7 +97,8 @@ Let's assume the following project structure:
 
 > **Side Note**
 >
-> `Automake` expects a GNU-style project with files like *NEWS* *README* *AUTHORS* *ChangeLog*. You can fix this through one of the following ways:
+> `Automake` expects a GNU-style project with files like *NEWS* *README*
+> *AUTHORS* *ChangeLog*. You can fix this through one of the following ways:
 >
 >     $ touch NEWS README AUTHORS COPYING ChangeLog
 >
@@ -91,7 +106,8 @@ Let's assume the following project structure:
 >
 >     AUTOMAKE_OPTIONS = foreign
 
-3. Modify *src/Makefile.am* (or the original *./Makefile.am* if a single directory structure) and add compiler and linker options:
+3. Modify *src/Makefile.am* (or the original *./Makefile.am* if a single
+directory structure) and add compiler and linker options:
 
         AM_CFLAGS = -Wall --pedantic -std=c99 -O2
         AM_LDFLAGS =
