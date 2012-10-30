@@ -8,6 +8,9 @@ Brian Groudan over at Mozilla conducted a [study][moz] into how and why users
 bookmark URLs.  I think it can be further simplified even further into
 three categories: Now, Later, and Future.
 
+![now](/static/images/bookmarks/now.png)
+- [Brandon
+  Warren](http://www.flickr.com/photos/brandoncwarren/4236278556/in/photostream/)
 ## Now
 
 This is the stuff you use daily: email, calendar, news, Facebook, etc. In the
@@ -20,6 +23,9 @@ I type a command `b email` in my address bar to visit my email. In reality, I've
 simplified all my common sites to single letter aliases such as `b c ` to visit
 Google Calendar rather than depend on address bar auto-completion.
 
+![later](/static/images/bookmarks/later.png)
+- [Stefan
+  Imhoff](http://www.flickr.com/photos/kogakure/153741685/in/photostream/)
 ## Later
 
 Stuff here can be broken down into two subcategories for me: stuff to read and
@@ -34,6 +40,9 @@ Stuff to work on is solved by [Stash][st]. I've adopted a one window per topic /
 task workflow. Using Stash allows me to conveniently save / load windows full of
 tabs to temporarily suspend work and continue later.
 
+![future](/static/images/bookmarks/future.png)
+- [Josh
+  DiMauro](http://www.flickr.com/photos/jazzmasterson/1895715/in/photostream/)
 ## Future
 
 Future can also be broken down into two subcategories: content to save and
@@ -50,7 +59,7 @@ On a side note, despite this popular request for [tagging support][bug] in Chrom
 bookmarks from 3 years ago it still hasn't been implemented, so I'm stuck using
 a complicated folder hierarchy instead.
 
-The final picture form:
+![bookmarks flowchart](/static/images/bookmarks/flowchart.png)
 
 [moz]: https://blog.mozilla.org/ux/2012/10/save-for-later/
 [qm]: https://chrome.google.com/webstore/detail/quickmarks/piefpokhpcehbeelhohgcnbipnfkogig
