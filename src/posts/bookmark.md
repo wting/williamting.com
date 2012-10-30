@@ -2,6 +2,7 @@ Author: William Ting
 Date: 2012-10-30
 Title: Why We Bookmark
 Tags: bookmark, reference, chrome, extension, saving
+Status: draft
 
 ... over at Mozilla conducted a study into how and why users bookmark URLs. I think it can be further simplified even further into 3 categories: Now, Later, and Future.
 
