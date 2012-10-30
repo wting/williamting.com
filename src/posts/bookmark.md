@@ -18,7 +18,11 @@ sites.
 I'm keyboard driven, so I've solved this problem with [Quickmarks][qm]. Simply,
 I type a command `b email` in my address bar to visit my email. In reality, I've
 simplified all my common sites to single letter aliases such as `b c ` to visit
-Google Calendar.
+Google Calendar rather than depend on address bar auto-completion.
+
+## Later
+
+
 
 [moz]: https://blog.mozilla.org/ux/2012/10/save-for-later/
 [qm]:

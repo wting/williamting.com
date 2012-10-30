@@ -12,7 +12,7 @@ DEFAULT_DATE_FORMAT = ('%b %d, %Y')
 
 #THEME = 'notmyidea'
 THEME = './src/themes/svbtle/'
-DEFAULT_CATEGORY = 'default'
+DEFAULT_CATEGORY = 'misc'
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 RELATIVE_URLS = False
