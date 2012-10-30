@@ -21,7 +21,7 @@ github: build less
 	rm -fr ${OUTPUT}
 
 public: clean less build
-	rsync -hvaxzlEP --stats --del ${OUTPUT}/ dh:~/williamting.com/public/
+	rsync -hvaxzlEP --stats --del ${OUTPUT}/ dh:~/blog.williamting.com/public/
 	rm -fr ${OUTPUT}
 	git push all
 

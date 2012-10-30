@@ -2,16 +2,17 @@
 AUTHOR = 'William Ting'
 EMAIL = 'william.h.ting at gmail.com'
 SITENAME = 'William Ting'
-#TAGLINE = 'has founded a bunch of ideas'
-SITEURL = 'http://williamting.com'
-TIMEZONE = 'Pacific/Honolulu'
+#TAGLINE = 'does stuff the hard way'
+#SITEURL = 'http://blog.williamting.com'
+SITEURL = 'http://localhost:8000'
+TIMEZONE = 'America/Chicago'
 DEFAULT_LANG = 'en'
 LOCALE = ''
 DEFAULT_DATE_FORMAT = ('%b %d, %Y')
 
-THEME = './src/themes/svbtle/'
 #THEME = 'notmyidea'
-DEFAULT_CATEGORY = ''
+THEME = './src/themes/svbtle/'
+DEFAULT_CATEGORY = 'default'
 ARTICLE_URL = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
 ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 RELATIVE_URLS = False
@@ -21,6 +22,9 @@ FEED_DOMAIN = SITEURL
 FEED = 'feeds/all.atom.xml'
 CATEGORY_FEED = 'feeds/category.%s.atom.xml'
 TAG_FEED = 'feeds/tag.%s.atom.xml'
+
+PAGE_DIR = ('pages/')
+ARTICLE_DIR = ('posts/')
 
 GOOGLE_ANALYTICS = 'UA-29827268-2'
 #DISQUS_SITENAME = 'wting'
