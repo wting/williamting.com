@@ -3,7 +3,7 @@ Date: 2012-08-02
 Title: GUADEC 2012
 Tags: gnome, guadec, tor, crowdfund, ocr, community
 
-![GNOME banner](http://williamting.com/static/images/guadec/banner.jpg)
+![GNOME banner](/static/images/guadec/banner.jpg)
 
 After the initial culture shock of attending my first Linux conference (let's just say the dress code was casual), the annual GNOME conference was highly informative and productive.
 
