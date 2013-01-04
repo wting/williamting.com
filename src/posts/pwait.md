@@ -18,7 +18,7 @@ robust Bash version:
     - monitoring multiple pids
     - monitoring processes based on name
 
-Anyway, you can find pwait at this [GitHub repo][gh].
+Anyway, you can find `pwait` at this [GitHub repo][gh].
 
 [pw]: http://www.freebsd.org/cgi/man.cgi?pwait
 [w]: http://linux.die.net/man/3/wait
