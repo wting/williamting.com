@@ -18,6 +18,9 @@ robust Bash version:
     - monitoring multiple pids
     - monitoring processes based on name
 
+I looked into an event driven implementation (using `tail --pid`) but was
+rejected due to lack of `--pid` support in BusyBox's implementation.
+
 Anyway, you can find `pwait` at this [GitHub repo][gh].
 
 [pw]: http://www.freebsd.org/cgi/man.cgi?pwait
