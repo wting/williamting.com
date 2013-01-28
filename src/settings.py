@@ -4,7 +4,7 @@ EMAIL = 'william.h.ting at gmail.com'
 SITENAME = 'William Ting'
 #TAGLINE = 'does stuff the hard way'
 SITEURL_PUBLIC = 'http://blog.williamting.com'
-SITEURL_LOCAL = 'http://localhost:8000'
+SITEURL = 'http://localhost:8000'
 TIMEZONE = 'America/Chicago'
 DEFAULT_LANG = 'en'
 LOCALE = ''
@@ -18,10 +18,13 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 RELATIVE_URLS = False
 MARKUP = 'md'
 
+#PLUGINS = ["pelican.plugins.latex"]
+#LATEX = 'article'
+
 FEED_DOMAIN = SITEURL
-FEED = 'feeds/all.atom.xml'
-CATEGORY_FEED = 'feeds/category.%s.atom.xml'
-TAG_FEED = 'feeds/tag.%s.atom.xml'
+FEED_ATOM = 'feeds/all.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/category.%s.atom.xml'
+TAG_FEED_ATOM = 'feeds/tag.%s.atom.xml'
 
 PAGE_DIR = ('pages/')
 ARTICLE_DIR = ('posts/')
@@ -33,7 +36,7 @@ LINKS = (
         ('@_wting', 'https://twitter.com/_wting'),
         ('email', 'mailto:william.h.ting at gmail.com'),
         ('github', 'https://github.com/wting'),
-        ('feed', FEED_DOMAIN + '/' + FEED),
+        ('feed', FEED_DOMAIN + '/' + FEED_ATOM),
         )
 
 DEFAULT_PAGINATION = 5
