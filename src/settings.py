@@ -18,8 +18,8 @@ ARTICLE_SAVE_AS = 'posts/{date:%Y}/{date:%m}/{date:%d}/{slug}/index.html'
 RELATIVE_URLS = False
 MARKUP = 'md'
 
-#PLUGINS = ["pelican.plugins.latex"]
-#LATEX = 'article'
+PLUGINS = ["pelican.plugins.latex"]
+LATEX = 'article'
 
 FEED_DOMAIN = SITEURL
 FEED_ATOM = 'feeds/all.atom.xml'
