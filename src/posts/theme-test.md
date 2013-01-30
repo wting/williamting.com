@@ -4,6 +4,7 @@ Title: This Is A Theme Testing Post
 Category: frontend, webdev
 Tags: pelican, theme, testing, ui
 Status: draft
+Latex:
 
 ## Paragraph, Link, Bold, Italics
 
@@ -46,6 +47,13 @@ scelerisque lorem.
 > make war at pleasure.
 >
 > – Abraham Lincoln
+
+## LaTeX
+
+This $\LaTeX$ [plugin](https://github.com/barrysteyn/pelican_plugin-latex)
+allows me to add inline (e.g. $x^2$) or standalone equations:
+
+$$\frac{n!}{k!(n-k)!} = \binom{n}{k}$$
 
 ## Code
 
