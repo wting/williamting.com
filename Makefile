@@ -5,12 +5,12 @@ SVBTLE = ./src/themes/svbtle/static/css
 
 build_local: less
 	@-rm -rf ${OUTPUT}
-	sed 's/SITEURL_LOCAL/SITEURL/' < ./src/settings.py > ./src/settings_build.py
+	sed 's:SITEURL_LOCAL:SITEURL:' < ./src/settings.py > ./src/settings_build.py
 	${CC} ${CFLAGS}
 
 build_public: less
 	@-rm -rf ${OUTPUT}
-	sed 's/SITEURL_PUBLIC/SITEURL/' < ./src/settings.py > ./src/settings_build.py
+	sed 's:SITEURL_PUBLIC:SITEURL:' < ./src/settings.py > ./src/settings_build.py
 	${CC} ${CFLAGS}
 
 less:
@@ -29,7 +29,6 @@ github: build_public
 public: clean build_public
 	rsync -hvaxzlEP --stats --del ${OUTPUT}/ dh:~/blog.williamting.com/public/
 	rm -fr ${OUTPUT}
-	git push all
 
 clean:
 	@-rm -rf public/
