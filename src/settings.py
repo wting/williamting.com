@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 AUTHOR = 'William Ting'
-EMAIL = 'william.h.ting at gmail.com'
+EMAIL = 'io at williamting.com'
 SITENAME = 'William Ting'
 #TAGLINE = 'does stuff the hard way'
 SITEURL_PUBLIC = 'http://blog.williamting.com'
