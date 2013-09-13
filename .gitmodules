@@ -1,0 +1,3 @@
+[submodule "src/themes/svbtle"]
+	path = src/themes/svbtle
+	url = git@github.com:wting/pelican-svbtle.git

@@ -1,0 +1,12 @@
+pytz>=2013b
+Jinja2==2.7.1
+MarkupSafe==0.18
+Pygments==1.6
+Unidecode==0.04.13
+argparse==1.2.1
+blinker==1.3
+docutils==0.11
+feedgenerator==1.7
+pelican==3.2.2
+six==1.4.1
+wsgiref==0.1.2
