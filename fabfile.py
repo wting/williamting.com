@@ -7,8 +7,8 @@ env.deploy_path = 'output'
 DEPLOY_PATH = env.deploy_path
 
 # Remote server configuration
-production = 'root@williamting.com:22'
-dest_path = '/var/www'
+production = 'ting@williamting.com:22'
+dest_path = '/home/ting/www/williamting.com'
 
 # Rackspace Cloud Files configuration settings
 env.cloudfiles_username = 'my_rackspace_username'

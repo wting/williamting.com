@@ -15,7 +15,7 @@ FTP_TARGET_DIR=/
 SSH_HOST=williamting.com
 SSH_PORT=22
 SSH_USER=ting
-SSH_TARGET_DIR=~/www/williamting.com
+SSH_TARGET_DIR=/home/ting/www/williamting.com
 
 S3_BUCKET=my_s3_bucket
 
