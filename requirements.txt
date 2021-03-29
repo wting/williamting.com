@@ -1,7 +1,7 @@
 pytz>=2013b
 Jinja2==2.7.1
 MarkupSafe==0.18
-Pygments==1.6
+Pygments==2.7.4
 Unidecode==0.04.13
 argparse==1.2.1
 blinker==1.3
